@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.triovision.controller.CarteMotifController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="239.0" layoutY="47.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle fx:id="pion00" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle00" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="pion01" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle01" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Rectangle fx:id="pion10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle10" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Rectangle fx:id="pion11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle11" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Rectangle fx:id="pion02" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle02" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Rectangle fx:id="pion12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle12" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Rectangle fx:id="pion03" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle03" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+            <Rectangle fx:id="pion13" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle13" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Rectangle fx:id="pion20" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle20" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Rectangle fx:id="pion21" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle21" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Rectangle fx:id="pion22" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle22" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Rectangle fx:id="pion23" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle23" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Rectangle fx:id="pion30" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle30" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Rectangle fx:id="pion31" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle31" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Rectangle fx:id="pion32" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle32" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Rectangle fx:id="pion33" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#clickedRectangle33" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <AnchorPane layoutX="13.0" layoutY="200.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte1" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte1" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte1" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu1" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="103.0" layoutY="200.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte2" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte2" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte2" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu2" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="205.0" layoutY="200.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte3" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte3" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte3" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu3" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" layoutY="200.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte4" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte4" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte4" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu4" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="395.0" layoutY="200.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte5" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte5" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte5" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu5" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="487.0" layoutY="200.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte6" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte6" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte6" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu6" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="487.0" layoutY="302.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte7" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte7" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte7" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu7" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="395.0" layoutY="302.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte8" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte8" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte8" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu8" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" layoutY="302.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte9" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte9" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte9" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu9" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="205.0" layoutY="302.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte10" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte10" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte10" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu10" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="103.0" layoutY="302.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte11" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte11" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte11" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu11" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="302.0" prefHeight="83.0" prefWidth="68.0">
+         <children>
+            <Region fx:id="regionCarte12" prefHeight="83.0" prefWidth="59.0" />
+            <Rectangle fx:id="contourCarte12" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+            <GridPane fx:id="grilleCarte12" alignment="CENTER" layoutX="-4.0" layoutY="4.0" prefHeight="74.0" prefWidth="66.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle fx:id="rectGauche12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="rectHaut12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="rectMilieu12" arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="rectDroite12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="TextFieldselectX" layoutX="103.0" layoutY="56.0" prefHeight="9.0" prefWidth="35.0" />
+      <Text layoutX="81.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x =" />
+      <Text layoutX="32.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle position :" />
+      <TextField fx:id="TextFieldselectY" layoutX="103.0" layoutY="88.0" prefHeight="9.0" prefWidth="35.0" />
+      <Text layoutX="81.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="y =" />
+      <Button fx:id="buttonMovePosition" layoutX="86.0" layoutY="127.0" mnemonicParsing="false" onAction="#changePosition" text="Changer" />
+      <Label fx:id="texteError" layoutX="221.0" layoutY="178.0" prefHeight="18.0" prefWidth="226.0" />
+      <Label fx:id="remplirCoordonnée" layoutX="102.0" layoutY="160.0" prefHeight="18.0" prefWidth="35.0" />
+      <Text fx:id="textBoxJ1" fill="#48ae29" layoutX="431.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="checkBoxJ1" layoutX="431.0" layoutY="104.0" mnemonicParsing="false" />
+      <Text fx:id="textBoxJ2" fill="#ffb700" layoutX="506.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="checkBoxJ2" layoutX="506.0" layoutY="104.0" mnemonicParsing="false" />
+      <Label fx:id="labelNbJ1" layoutX="453.0" layoutY="77.0" prefHeight="18.0" prefWidth="43.0" />
+      <Label fx:id="labelNbJ2" layoutX="530.0" layoutY="79.0" prefHeight="18.0" prefWidth="50.0" />
+      <Text fx:id="textQuiJoue" fill="#3038d7" layoutX="454.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qui joue ?" wrappingWidth="66.39999999999986">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="13.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pioche : ">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Label fx:id="countDeck" layoutX="47.0" layoutY="5.0" prefHeight="18.0" prefWidth="17.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Text layoutX="205.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x " />
+      <Text layoutX="236.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="y" />
+      <Text layoutX="220.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="252.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="220.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+      <Text layoutX="220.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+      <Text layoutX="220.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+      <Text layoutX="280.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+      <Text layoutX="311.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+      <Text layoutX="343.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+   </children>
+</AnchorPane>
